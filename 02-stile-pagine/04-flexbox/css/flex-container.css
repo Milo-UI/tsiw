@@ -1,0 +1,64 @@
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.flex-container {
+    /* Per creare un container flex basta dargli display: flex; */
+    display: flex;
+    background-color: #d1d1d1;
+    border: 2px dashed #545454;
+}
+
+.flex-item {
+    height: 100px;
+    min-width: 100px;
+}
+
+.one {
+    background-color: #fa8072;
+}
+
+.two {
+    background-color: #72b4fa;
+}
+
+.three {
+    background-color: #72fa96;
+}
+
+.flex-container.direction {
+    /* flex-direction: row; */
+
+    /* flex-direction: row-reverse; */
+
+    flex-direction: column;
+    
+    /* flex-direction: column-reverse; */
+}
+
+.flex-container.wrap {
+    gap: .5rem;
+
+    /* flex-wrap: nowrap; */
+
+    flex-wrap: wrap;
+
+    /* flex-wrap: wrap-reverse; */
+}
+
+.flex-container.justify {
+    /* justify-content: flex-start; */
+
+    /* justify-content: flex-end; */
+
+    /* justify-content: center; */
+
+    /* justify-content: space-between; */
+
+    /* justify-content: space-around; */
+
+    justify-content: space-evenly;
+}
