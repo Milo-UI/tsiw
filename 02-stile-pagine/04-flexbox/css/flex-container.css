@@ -29,6 +29,10 @@
     background-color: #72fa96;
 }
 
+.four {
+    background-color: #effa72;
+}
+
 .flex-container.direction {
     /* flex-direction: row; */
 
@@ -61,4 +65,40 @@
     /* justify-content: space-around; */
 
     justify-content: space-evenly;
+}
+
+.flex-container.align {
+    min-height: 350px;
+    gap: 0.5rem;
+
+    /* default: rende i flex item alti quanto il container */
+    align-items: stretch;
+    /* per allinearli all'inizio del contenitore */
+    align-items: flex-start;
+    /* per allinearli alla fine del contenitore */
+    align-items: flex-end;
+    /* per allinearli al centro dell'asse trasversale */
+    align-items: center;
+    /* per allinearli rispetto al contenuto */
+    /* align-items: baseline; */
+}
+
+.flex-container.align .flex-item {
+    height: auto;
+}
+
+.flex-container.align .one {
+    min-height: 150px;
+}
+
+.flex-container.align .two {
+    min-height: 300px;
+}
+
+.flex-container.align .three {
+    min-height: 80px;
+}
+
+.flex-container.align .four {
+    min-height: 200px;
 }

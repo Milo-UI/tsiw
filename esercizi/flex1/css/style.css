@@ -1,0 +1,164 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: #535353;
+}
+
+h1, h2, h3, h4 {
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid #ababab;
+}
+
+.logo a {
+    color: #535353;
+    font-size: 2rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+    gap: 1rem;
+}
+
+.menu a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 990px;
+    margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    min-height: 50vh;
+    background-image: url(../img/hero-img.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    min-height: 50vh;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.hero .container {
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 4rem;
+}
+
+.btn {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    padding: .5rem 1rem;
+    background-color: #0d6efd;
+    border: 1px solid #0d6efd;
+    border-radius: .5rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: #0c54bf;
+    border: 1px solid #0c54bf;
+}
+
+.ultimi-post {
+    padding: 4rem 0;
+}
+
+.articolo {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.articolo:last-child {
+    margin-bottom: 0;
+}
+
+.articolo img {
+    border-radius: 1rem;
+}
+
+.articolo img,
+.articolo div {
+    width: 50%;
+}
+
+.articolo.pari img {
+    order: 1;
+}
+
+section > h2,
+section .container > h2 {
+    text-align: center;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.gallery-item {
+    /* (100/colonne - gap) + (gap / colonne) */
+    width: calc((25% - 1rem) + (1rem / 4));
+}
+
+.gallery-item img {
+    display: block;
+}
+
+footer {
+    display: flex;
+    color: white;
+    padding: 1.5rem 1rem;
+    justify-content: space-between;
+    background-color: #0c54bf;
+}
+
+footer p {
+    margin-bottom: 0;
+}
