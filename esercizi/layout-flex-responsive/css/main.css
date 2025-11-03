@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #21325e;
+    --secondary: #f1d00a;
+    --text-color: #323232;
+    --bg-color: #ffffff;
+}
+
+.dark-theme {
+    --text-color: #ffffff;
+    --bg-color: #323232;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    color: var(--text-color);
+}
+
+h1, h2, h3 {
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: .5rem;
+}
+
+.container {
+    padding: 1rem;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social {
+    display: flex;
+    gap: .5rem;
+}
+
+.social a {
+    background-color: var(--primary);
+    color: white;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    text-decoration: none;
+}
+
+.logo {
+    height: 60px;
+    order: -1;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: .5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: .4rem;
+    background-color: var(--primary);
+}
+
+nav ul {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    list-style: none;
+    background-color: var(--primary);
+    transition: all .2s ease-in-out;
+}
+
+nav ul.open {
+    right: 0;
+}
+
+nav .close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+nav .open-btn,
+nav .close-btn {
+    font-size: 1.25rem;
+    color: var(--bg-color);
+    cursor: pointer;
+}
+
+nav a {
+    color: var(--bg-color);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.claim {
+    min-height: 400px;
+    background-image: url(../img/keyboards-1.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: .5rem;
+}
+
+.claim .overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 400px;
+    padding: 1rem;
+    color: white;
+    background-color: rgba(50, 50, 50, .6);
+    border-radius: .5rem;
+}
+
+.card-group {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.card-group .card h3 {
+    margin-bottom: .5rem;
+}
+
+.card-group .card p {
+    margin-bottom: 0;
+}
+
+.articles {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--secondary);
+}
+
+footer p {
+    margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+    nav .open-btn,
+    nav .close-btn {
+        display: none;
+    }
+
+    nav ul {
+        position: static;
+        height: auto;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .card-group {
+        flex-direction: row;
+    }
+
+    .article {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .article img {
+        width: 50%;
+    }
+
+    .article.article-inv img {
+        order: 1;
+    }
+}
+
+@media screen and (min-width: 991px) {
+    .container {
+        max-width: 960px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+
+    .intro {
+        flex-direction: row;
+    }
+
+    .card-group {
+        flex-direction: column;
+        width: 30%;
+    }
+
+    .claim {
+        width: 70%;
+    }
+
+    .claim .overlay {
+        height: 100%;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .logo {
+        order: 0;
+        align-self: center;
+        height: 100px;
+    }
+}

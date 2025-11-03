@@ -1,11 +1,138 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Layout flex responsive</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 
+    <div class="container">
+
+        <header>
+            <div class="social">
+                <a href="#!"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#!"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#!"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+
+            <img class="logo" src="img/logo.svg" alt="">
+        </header>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="#!">HOME</a>
+                </li>
+                <li>
+                    <a href="#!">MODELLI</a>
+                </li>
+                <li>
+                    <a href="#!">SERVIZI</a>
+                </li>
+                <li>
+                    <a href="#!">ASSISTENZA</a>
+                </li>
+                <li>
+                    <a href="#!">CONTATTI</a>
+                </li>
+                <li class="close-btn">
+                    <i class="fa-solid fa-xmark"></i>
+                </li>
+            </ul>
+
+            <i class="open-btn fa-solid fa-bars"></i>
+        </nav>
+
+        <section class="intro">
+
+            <div class="claim">
+                <div class="overlay">
+                    <h1>Titolo principale</h1>
+                    <h2>Lorem ipsum dolor sit amet</h2>
+                </div>
+            </div>
+            
+            <div class="card-group">
+                <div class="card">
+                    <img src="img/keyboards-2.png" alt="">
+                    <h3>TITOLO</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, distinctio.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <img src="img/keyboards-3.png" alt="">
+                    <h3>TITOLO</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, distinctio.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <img src="img/keyboards-4.png" alt="">
+                    <h3>TITOLO</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, distinctio.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="articles">
+
+            <div class="article">
+                <img src="img/keyboards-5.png" alt="">
+
+                <div class="text">
+                    <h2>Lorem ipsum</h2>
+
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos voluptate molestias nam vel omnis aliquid adipisci, esse ullam odio laborum praesentium harum? Quam, sapiente amet. Error magni quod ad similique.
+                    </p>
+                </div>
+            </div>
+
+            <div class="article article-inv">
+                <img src="img/keyboards-6.png" alt="">
+
+                <div class="text">
+                    <h2>Lorem ipsum</h2>
+
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos voluptate molestias nam vel omnis aliquid adipisci, esse ullam odio laborum praesentium harum? Quam, sapiente amet. Error magni quod ad similique.
+                    </p>
+                </div>
+            </div>
+
+            <div class="article">
+                <img src="img/keyboards-7.png" alt="">
+
+                <div class="text">
+                    <h2>Lorem ipsum</h2>
+
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos voluptate molestias nam vel omnis aliquid adipisci, esse ullam odio laborum praesentium harum? Quam, sapiente amet. Error magni quod ad similique.
+                    </p>
+                </div>
+            </div>
+            
+        </section>
+        
+
+        <footer>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit
+            </p>
+        </footer>
+        
+    </div>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
