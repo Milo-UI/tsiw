@@ -7,3 +7,22 @@ const saluta = function(name) { // variabile locale che possiamo usare nel blocc
 
 saluta('Sandro'); // Passo il valore di name quando richiamo la funzione -> argomento
 
+const salutaMeglio = function(name, time) { // separiamo i parametri con le virgole
+    console.log(`${time} ${name}`);
+};
+
+salutaMeglio('Lorenzo', 'Buonasera'); // L'ordine è importante
+salutaMeglio();
+
+// Se richiamiamo una funzione che richiede dei parametri senza passarle degli argomenti, i parametri assumono il valore di undefined. Per evitare questo problema, possiamo assegnare dei valori di default.
+const salutaSicuro = function(name = 'Utente', time = 'Salve') {
+    console.log(`${time} ${name}`);
+};
+
+salutaSicuro(); // Se non passo alcun argomento, la funzione assegnerà i valori di default
+salutaSicuro('Paola', 'Buon pomeriggio'); // Se passo degli argomenti, questi sovrascriveranno quelli di default
+
+/*
+    - Un parametro è la variabile elencata tra parentesi tonde nella dichiarazione della funzione (fa parte della dichiarazione).
+    - Un argomento è il valore passato alla funzione quando viene chiamata (fa parte della chiamata).
+*/
