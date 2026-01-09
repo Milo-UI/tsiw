@@ -1,0 +1,23 @@
+@use "sass:map";
+@use "variables" as v;
+
+/* ------------------------------- SASS MIXINS ------------------------------ */
+/*
+    Un mixin è un blocco di stile riutilizzabile: una specie di funzione che incolla regole CSS dove serve, evitando duplicazioni.
+
+    Perché usarli:
+    - Riutilizziamo pattern comuni (es. media query)
+    - Possiamo passare parametri per variare il comportamento (es. colore, breakpoint)
+    - Manteniamo il codice più pulito e consistente
+
+    Nota:
+    I mixin possono contenere ance @content, così "avvolgono" del CSS.
+*/
+// Media query "up"
+@mixin mq-up($key) {
+    $bp: map.get(v.$breakpoints, $key);
+
+    @media (min-width: $bp) {
+        @content;
+    }
+}
