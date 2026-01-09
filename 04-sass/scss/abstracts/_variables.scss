@@ -6,7 +6,7 @@ $text: #e9ecf1;
 $muted: rgba($text, 0.75);
 
 $primary: #8d3b72;
-$danger: #e5484d;;
+$danger: #e5484d;
 $success: #3fb950;
 $warning: #f0b429;
 $info: #3b82f6;
@@ -26,4 +26,22 @@ $breakpoints: (
     md: 768px,
     lg: 992px,
     xl: 1200px
+);
+
+$badge-colors: (
+    primary: $primary,
+    success: $success,
+    warning: $warning,
+    danger: $danger,
+    info: $info
+);
+
+$spacers: (
+    0: 0,
+    1: 0.25rem,
+    2: 0.5rem,
+    3: 0.75rem,
+    4: 1rem,
+    5: 1.5rem,
+    6: 2rem
 );

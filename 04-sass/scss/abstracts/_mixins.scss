@@ -21,3 +21,11 @@
         @content;
     }
 }
+
+// Focus ring base
+@mixin focus-ring($color: v.$info) {
+    &:focus-visible {
+        outline: none;
+        box-shadow: 0 0 0 4px rgba($color, 0.28);
+    }
+}

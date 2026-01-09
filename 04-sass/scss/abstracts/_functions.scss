@@ -1,0 +1,15 @@
+@use "sass:math";
+
+/* ----------------------------- SASS FUNCTIONS ----------------------------- */
+/*
+    Una function in SASS è una funzione vera e propria: fa un calcolo e restituisce un valore (numero, colore, stringa...).
+    A differenza dei mixin, non genera blocchi di codice: produce un risultato da usare in una proprietà.
+
+    Perché usarle?
+    - Per conversioni e calcoli puliti (es. px -> rem, clamp, percentuali)
+    - Per evitare formule ripetute in giro per il scss
+    - Per rendere il design system più coerente.
+*/
+@function rem($px, $base: 16) {
+    @return math.div($px, $base) * 1rem;
+}
